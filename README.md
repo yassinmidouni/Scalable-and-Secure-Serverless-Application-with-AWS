@@ -72,17 +72,20 @@ Before starting, ensure you have:
 
 ### 1. **Configure AWS S3, CloudFront, and WAF**  
 
-#### 📂 **Set Up S3 Bucket**  
+#### 📂 **Set Up S3 Bucket** 
+![.](S3.png)
 1. Log in to the **AWS Console** > Navigate to **S3** > Click **Create bucket**.  
 2. Provide a **unique bucket name** and choose a region 🌍.  
 3. Upload your web application files by selecting the bucket and using the **Upload** option.  
 
 #### 🔒 **Set Up AWS WAF**  
+![.](WAF.png)
 1. Navigate to **AWS WAF** > Click **Create web ACL**.  
 2. Add **Managed Rule Groups** to secure your app against attacks.  
 3. Apply the rules to your **CloudFront distribution**.
 
-#### 🚀 **Set Up CloudFront CDN**  
+#### 🚀 **Set Up CloudFront CDN** 
+![.](CloudFront.png)
 1. Go to **CloudFront** > Click **Create Distribution**.  
 2. Choose your S3 bucket as the origin.  
 3. Configure **Viewer Protocol Policy** and **Web ACL** settings.  
@@ -91,6 +94,7 @@ Before starting, ensure you have:
 ---
 
 ### 2. **Configure DynamoDB and Lambda Functions**  
+![.](DynamoDB.png)
 
 #### 📊 **Create a DynamoDB Table**  
 1. Navigate to **DynamoDB** > Click **Create table**.  
@@ -100,7 +104,8 @@ Before starting, ensure you have:
 1. Go to **IAM Service** > Create a role for Lambda.  
 2. Attach the **AmazonDynamoDBFullAccess** policy. *(For production, follow the least privilege principle.)*
 
-#### 🛠️ **Create Lambda Functions**  
+#### 🛠️ **Create Lambda Functions** 
+![.](Lambda.png)
 1. Go to **AWS Lambda** > Click **Create function**.  
 2. Write functions in Python for:  
    - `insertEmployee` 📝  
