@@ -101,6 +101,8 @@ Before starting, ensure you have:
 2. Name the table and specify a partition key.  
 
 #### 🔑 **Set Up IAM Roles**  
+![image](IAMAWS.png)
+
 1. Go to **IAM Service** > Create a role for Lambda.  
 2. Attach the **AmazonDynamoDBFullAccess** policy. *(For production, follow the least privilege principle.)*
 
@@ -115,7 +117,9 @@ Before starting, ensure you have:
 
 ---
 
-### 3. **Implement API Gateway**  
+### 3. **Implement API Gateway** 
+![image](APIGW.png)
+
 
 1. Navigate to **API Gateway** > Select **REST API** > Click **Build**.  
 2. Create methods for your API:  
