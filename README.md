@@ -19,6 +19,7 @@ Together, we’ll walk through the setup, best practices, and benefits of creati
 ---
 
 ## 🏗️ **Solution Architecture**
+![.](Serverless-Application-AWS.gif)
 
 ### What is Serverless? 🤔  
 Serverless architecture is a **cloud computing paradigm** that eliminates the need for managing physical servers. 🛠️  
